@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE struts PUBLIC
+        "-//Apache Software Foundation//DTD Struts Configuration 2.3//EN"
+        "http://struts.apache.org/dtds/struts-2.3.dtd">
+
+<struts>
+
+
+    <constant name="struts.action.extension" value="action,do,,"/>
+    <constant name="struts.i18n.encoding" value="UTF-8"/>
+    <constant name="struts.devMode" value="true"/>
+    <constant name="struts.serve.static.browserCache" value="false"/>
+    <constant name="struts.configuration.xml.reload" value="true"/>
+
+    <package name="loginPkg" namespace="/login" extends="struts-default">
+
+        <interceptors>
+            <interceptor name="loginInterceptor" class="login.LoginInterceptor">
+                <param name="excludeActionNames">login,logon</param>
+            </interceptor>
+
+            <interceptor-stack name="mylogin">
+                <interceptor-ref name="defaultStack"/>
+                <interceptor-ref name="loginInterceptor"/>
+            </interceptor-stack>
+        </interceptors>
+
+        <default-interceptor-ref name="mylogin"/>
+
+        <global-results>
+            <result name="login">/login.jsp</result>
+        </global-results>
+
+        <action name="login" class="login.LoginAction" method="execute">
+            <result name="success" type="dispatcher">/WEB-INF/views/main.jsp</result>
+        </action>
+    </package>
+</struts>
