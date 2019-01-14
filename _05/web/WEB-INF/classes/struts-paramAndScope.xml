@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE struts PUBLIC
+        "-//Apache Software Foundation//DTD Struts Configuration 2.3//EN"
+        "http://struts.apache.org/dtds/struts-2.3.dtd">
+
+<struts>
+    <package name="paramAndScope" namespace="/paramAndScope" extends="struts-default">
+        <global-results>
+            <result name="login" type="dispatcher">/WEB-INF/views/result.jsp</result>
+        </global-results>
+        <action name="login3" class="paramAndScope.login.LoginAction3" method="input"/>
+        <action name="parameter1" class="paramAndScope.parameter.Parameter1" method="execute"/>
+        <action name="parameter2" class="paramAndScope.parameter.Parameter2" method="execute"/>
+        <action name="parameter3" class="paramAndScope.parameter.Parameter3" method="execute"/>
+    </package>
+</struts>

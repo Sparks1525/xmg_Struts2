@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE struts PUBLIC
+        "-//Apache Software Foundation//DTD Struts Configuration 2.3//EN"
+        "http://struts.apache.org/dtds/struts-2.3.dtd">
+
+<struts>
+    <!--
+    该属性指定需要Struts 2处理的请求后缀，该属性的默认值是action，即所有匹配*.action的请求都由Struts2处理。
+    如果用户需要指定多个请求后缀，则多个后缀之间以英文逗号（,）隔开
+    -->
+    <constant name="struts.action.extension" value="action,do,,"/>
+
+    <!--
+    当struts的配置文件修改后,系统是否自动重新加载该文件,默认值为false(生产环境下使用),开发阶段最好打开
+    -->
+    <constant name="struts.configuration.xml.reload" value="true"/>
+
+    <!--
+    设置浏览器是否缓存静态内容,默认值为true(生产环境下使用),开发阶段最好关闭
+    -->
+    <constant name="struts.serve.static.browserCache" value="false"/>
+
+    <!--
+    开发模式下使用,这样可以打印出更详细的错误信息
+    -->
+    <constant name="struts.devMode" value="true"/>
+    <!--
+    是否支持动态方法调用  不安全
+    -->
+    <constant name="struts.enable.DynamicMethodInvocation" value="false"/>
+    <!--
+    默认UTF-8
+    指定默认编码集,作用于HttpServletRequest的setCharacterEncoding方法 和freemarker 、velocity的输出
+    -->
+    <constant name="struts.i18n.encoding" value="UTF-8"/>
+
+
+    <package name="manyact" extends="struts-default" namespace="/manyact">
+
+        <action name="*_*" class="mystruts2.manyact.{1}" method="{2}">
+            <result type="chain" name="list">/hello/hello.action</result>
+            <result type="redirectAction" name="login">/hello/hello</result>
+            <result type="redirect" name="input">/hello.jsp</result>
+            <result type="dispatcher" name="error">/hello.jsp</result>
+        </action>
+    </package>
+
+    <package name="helloPkg" extends="struts-default" namespace="/hello">
+
+        <global-results>
+            <result>index.jsp</result>
+        </global-results>
+        <action name="hello" class="mystruts2.hello.HelloAction" method="sayHello">
+            <result name="success" type="dispatcher">/hello.jsp</result>
+        </action>
+    </package>
+
+    <include file="/mystruts2/test/test.xml"/>
+
+</struts>
