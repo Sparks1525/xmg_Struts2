@@ -19,4 +19,5 @@ public class User {
     public void setPassword(Integer password) {
         this.password = password;
     }
+
 }
