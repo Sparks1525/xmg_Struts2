@@ -19,14 +19,15 @@
     <session id="637869462">
       <usages-collector id="statistics.lifecycle.project">
         <counts>
-          <entry key="project.closed" value="21" />
+          <entry key="project.closed" value="23" />
           <entry key="project.open.time.0" value="1" />
-          <entry key="project.open.time.1" value="10" />
+          <entry key="project.open.time.1" value="11" />
           <entry key="project.open.time.2" value="7" />
           <entry key="project.open.time.3" value="1" />
           <entry key="project.open.time.4" value="1" />
+          <entry key="project.open.time.6" value="1" />
           <entry key="project.open.time.7" value="1" />
-          <entry key="project.opened" value="21" />
+          <entry key="project.opened" value="23" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
@@ -258,7 +259,9 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scope" />
       <pane id="AndroidView" />
+      <pane id="PackagesPane" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -295,16 +298,10 @@
               <item name="WEB-INF" type="462c0819:PsiDirectoryNode" />
               <item name="views" type="462c0819:PsiDirectoryNode" />
             </path>
-            <path>
-              <item name="xmg_Struts2" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Note" type="462c0819:PsiDirectoryNode" />
-            </path>
           </expand>
           <select />
         </subPane>
       </pane>
-      <pane id="PackagesPane" />
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -315,21 +312,21 @@
     <property name="aspect.path.notification.shown" value="true" />
     <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1547452057242" />
     <property name="jdk.selected.JAVA_MODULE" value="1.7" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/otherlib/struts-2.3.15.3" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
-    <property name="project.structure.last.edited" value="Project" />
+    <property name="project.structure.last.edited" value="Libraries" />
     <property name="project.structure.proportion" value="0.15687852" />
     <property name="project.structure.side.proportion" value="0.2" />
     <property name="settings.editor.selected.configurable" value="project.propVCSSupport.Mappings" />
   </component>
   <component name="RecentsManager">
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="D:\Sparks\xmg\xmg_Struts2\_04\src" />
-      <recent name="D:\Sparks\xmg\xmg_Struts2\_04\src\mystruts2" />
-      <recent name="D:\Sparks\xmg\xmg_Struts2\_05\web" />
-      <recent name="D:\Sparks\xmg\xmg_Struts2\_03\src" />
-      <recent name="D:\Sparks\xmg\xmg_Struts2\_02\web\WEB-INF\lib" />
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\Sparks\xmg\xmg_Struts2\_07\src" />
+      <recent name="D:\Sparks\xmg\xmg_Struts2\_07\web\WEB-INF" />
+      <recent name="D:\Sparks\xmg\xmg_Struts2\_07\web" />
+      <recent name="D:\Sparks\xmg\xmg_Struts2\Note\src" />
+      <recent name="D:\Sparks\xmg\xmg_Struts2\_06\src" />
     </key>
     <key name="CopyClassDialog.RECENTS_KEY">
       <recent name="intercepter.domain" />
@@ -338,12 +335,12 @@
       <recent name="core.web" />
       <recent name="core.web.filter" />
     </key>
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="D:\Sparks\xmg\xmg_Struts2\_07\src" />
-      <recent name="D:\Sparks\xmg\xmg_Struts2\_07\web\WEB-INF" />
-      <recent name="D:\Sparks\xmg\xmg_Struts2\_07\web" />
-      <recent name="D:\Sparks\xmg\xmg_Struts2\Note\src" />
-      <recent name="D:\Sparks\xmg\xmg_Struts2\_06\src" />
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="D:\Sparks\xmg\xmg_Struts2\_04\src" />
+      <recent name="D:\Sparks\xmg\xmg_Struts2\_04\src\mystruts2" />
+      <recent name="D:\Sparks\xmg\xmg_Struts2\_05\web" />
+      <recent name="D:\Sparks\xmg\xmg_Struts2\_03\src" />
+      <recent name="D:\Sparks\xmg\xmg_Struts2\_02\web\WEB-INF\lib" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -1258,6 +1255,8 @@
       <workItem from="1547598762981" duration="1267000" />
       <workItem from="1547619802685" duration="31000" />
       <workItem from="1547619860200" duration="64000" />
+      <workItem from="1547684677669" duration="595000" />
+      <workItem from="1547702114047" duration="726000" />
     </task>
     <task id="LOCAL-00001" summary="init">
       <created>1547086940202</created>
@@ -1319,7 +1318,7 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="73094000" />
+    <option name="totallyTimeSpent" value="74415000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -1333,7 +1332,7 @@
   <component name="ToolWindowManager">
     <frame x="296" y="0" width="1199" height="1057" extended-state="0" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.19490781" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.20193152" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="JRebel" order="2" side_tool="true" />
       <window_info id="Image Layers" order="3" />
@@ -1812,11 +1811,12 @@
       </state>
       <state key="ModuleStructureConfigurable.UI">
         <settings>
-          <last-edited>Struts 2|Web|_07</last-edited>
+          <last-edited>_01</last-edited>
           <splitter-proportions>
             <option name="proportions">
               <list>
                 <option value="0.2" />
+                <option value="0.6" />
               </list>
             </option>
           </splitter-proportions>
@@ -1836,7 +1836,7 @@
       </state>
       <state key="ProjectLibrariesConfigurable.UI">
         <settings>
-          <last-edited>lib_07</last-edited>
+          <last-edited>lib_01</last-edited>
           <splitter-proportions>
             <option name="proportions">
               <list>
